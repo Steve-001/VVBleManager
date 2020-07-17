@@ -1,0 +1,6 @@
+framework module VVBleManager {
+  umbrella header "VVBleManager.h"
+
+  export *
+  module * { export * }
+}
