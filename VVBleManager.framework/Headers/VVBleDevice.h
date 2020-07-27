@@ -140,7 +140,25 @@ typedef NS_ENUM(NSUInteger, VVPOCTStateCode) {
 };
 
 //
+@interface VVBleDevice (WriteData)
+@property (nonatomic , assign) VVCommandType commandType;
 
+- (void)vv_sendFixedDataCommand:(VVCommandType)commandType
+                          error:(void (^) (NSError *error))errorBlock
+                   writeSucceed:(void (^) (void))succeed;
+
+//
+- (void)vv_setupTargetMin:(float)min
+                 maxValue:(float)max
+                    error:(void (^) (NSError *error))errorBlock
+             writeSucceed:(void (^) (void))succeed;
+
+
+- (void)vv_readHistoryDataNumber:(NSUInteger)number
+                           error:(void (^) (NSError *error))errorBlock
+                    writeSucceed:(void (^) (void))succeed;
+
+@end
 
 FOUNDATION_EXPORT NSString *const kFlagCode_ReadHistoryDataEnd;
 
@@ -165,7 +183,13 @@ typedef NS_ENUM(NSUInteger, VVBleErrorCode) {
     VVBleErrorCode_writeValueUnavailiable = 6002,
     
 };
+@interface VVBleDevice (ParseData)
 
+- (NSDictionary <NSString *,id>*)vv_parseOrigrinalData:(NSString *)origrinalData
+                                           commandType:(VVCommandType)commandType;
+
+
+@end
 NS_ASSUME_NONNULL_END
 
 
