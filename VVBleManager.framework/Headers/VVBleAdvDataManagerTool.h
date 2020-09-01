@@ -12,22 +12,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*
  *搜索过滤设备
- * scanForSn  需要搜索的设备sn号
- * scanForMac  需要搜索的设备mac地址
- *  如果 scanForSn scanForMac 都传nil。搜索所有有效设备
+ * sn  需要搜索的设备sn号
+ * macAdress  需要搜索的设备mac地址
+ *  如果 sn macAdress 都传nil。搜索所有有效设备
  */
 + (BOOL)isAvailableDeviceOnDiscoverPeripheralName:(NSString *)name
                                 advertisementData:(NSDictionary *)advertisementData
                                              RSSI:(NSNumber *)RSSI
-                                        scanForSn:(nullable NSString *)scanForSn
-                                       scanForMac:(nullable NSString *)scanForMac;
+                                        scanForSn:(nullable NSString *)sn
+                                       scanForMac:(nullable NSString *)macAdress;
 
-//通过广播包数据，获取设备的mac地址
-+ (NSString *)macString:(NSDictionary *)advData;
+//通过广播包数据，获取设备的 mac地址
++ (NSString *)macAdressString:(NSDictionary *)advData;
 
-//通过广播包数据，获取设备的sn号
+//通过广播包数据，获取设备的 sn号
 + (NSString *)snString:(NSDictionary *)advData;
 
+
+
++ (BOOL)saveDeviceInfoToUserDefaultWithSn:(NSString *)sn macAdress:(NSString *)macAdress;
++ (NSDictionary *)getLocalDeviceInfoFromUserDefault;
 
 @end
 
@@ -61,6 +65,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)vv_stringFromDate:(NSDate *)date format:(VVDateFormatStringOption)dateFormat;
 
+/*
+ 验证 是否是mac地址。
+ 首先看一个MAC地址：48:5D:60:61:3D:C5。
+ 其中由6个字节（十六进制）组成，简单理解为数字、大小写字母（a-fA-F）、冒号 : 组成
+*/
+- (BOOL)vv_isAvailableMacadress;
 
 @end
 

@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/VVBleAdvDataManagerTool.h</key>
 		<data>
-		a8H3wDoRSvuZN/MIGYb1TwitjJU=
+		ZSPhK6V2K552uAb98ncfZUaQIxA=
 		</data>
 		<key>Headers/VVBleDevice.h</key>
 		<data>
-		WvJtLWZB0Wu3QqgsvgYDPf8zr1Q=
+		ky+ObeaTVnjvfNd1n6cibWsYzwg=
 		</data>
 		<key>Headers/VVBleManager.h</key>
 		<data>
-		E2nd/eIi/G3rxIb2n0sbfyC/UbE=
+		SfqKjDzfCNHpJxOnuf0urKQycko=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>VVREADME.md</key>
 		<data>
-		Dl2aT9D1qWBekLc66J0xBMu0uUE=
+		mApzlb41BDa53zMi7ReZL6TuMj8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,33 +35,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a8H3wDoRSvuZN/MIGYb1TwitjJU=
+			ZSPhK6V2K552uAb98ncfZUaQIxA=
 			</data>
 			<key>hash2</key>
 			<data>
-			c9Mtb+9pLbyFG9+xpEw9h4WlEtFU3KKAGfhTPP6MzNQ=
+			AMUqOaAumY1M5WcsuflE0Fr93L41dzlmSW92to+jSnA=
 			</data>
 		</dict>
 		<key>Headers/VVBleDevice.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WvJtLWZB0Wu3QqgsvgYDPf8zr1Q=
+			ky+ObeaTVnjvfNd1n6cibWsYzwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0sD9Ej41MfGcwnqzqeSzDrqk/A6Gx1E9AkHbGgwjlrQ=
+			THjs3d9dAdUVpf1NdCXXqUKgmyX0y5Bl9HFPpKLEXoc=
 			</data>
 		</dict>
 		<key>Headers/VVBleManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E2nd/eIi/G3rxIb2n0sbfyC/UbE=
+			SfqKjDzfCNHpJxOnuf0urKQycko=
 			</data>
 			<key>hash2</key>
 			<data>
-			x2io4+kE77RhvwWBYlM2fZvNvMj56oFoYVqgMfc/HFA=
+			/DC+nuBneD6rFlL1IX8KdaOzSqS7IegsxTWCVCtWPqc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dl2aT9D1qWBekLc66J0xBMu0uUE=
+			mApzlb41BDa53zMi7ReZL6TuMj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			odTHbs30zpTQqwE13EIMC6eedak3QBikDn/4g3NhAno=
+			Jb6EkScqfRw8RLQzpXP/2L5EpYGWZusB1e3oSf+784c=
 			</data>
 		</dict>
 	</dict>

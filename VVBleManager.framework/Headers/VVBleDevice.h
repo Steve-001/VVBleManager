@@ -30,9 +30,11 @@ typedef NS_ENUM(NSUInteger, VVCommandType){
     VVCommandType_ReadGKIHistoryData,
     VVCommandType_ReadNumberOfHistoryData,
 };
+NSString * vvBleDeviceCurrentCommandTypeStringFromType(VVCommandType type);
+
 
 typedef NS_ENUM(NSInteger, VVBleDeviceUnitType) {
-    VVBleDeviceUnitType_unknown = 0, // mool/L
+    VVBleDeviceUnitType_unknow = 0, // 设备默认单位
     VVBleDeviceUnitType_mool_L  = 1, // mool/L
     VVBleDeviceUnitType_mg_dL   = 2,  // mg/dL
 };
@@ -48,7 +50,7 @@ typedef void (^VVResponseDataBlock) (VVCommandType commandType, NSData * origina
 @interface VVBleDevice : NSObject
 
 @property (nonatomic , copy, readonly)  NSString  * name;
-@property (nonatomic , copy)  NSString  * mac;
+@property (nonatomic , copy)  NSString  * macAdress;
 @property (nonatomic , copy)  NSString  * sn;
 @property (nonatomic , assign, readonly) VVBleDeviceUnitType unitType;
 @property (nonatomic , strong, readonly) CBPeripheral * peripheral;
@@ -78,17 +80,16 @@ typedef void (^VVResponseDataBlock) (VVCommandType commandType, NSData * origina
                        error:(void (^) (NSError *error))errorBlock;
 
 /*
- * GKI device command
- * read number history data
- *
+ GKI设备
+ 读取多条历史数据
  */
 - (void)commandReadHistoryDataNumber:(NSUInteger)number
                          receiveData:(VVResponseDataBlock)receiveDataBlcok
                     writeDataSucceed:(void (^) (void))writeDataSucceed
                                 error:(void (^) (NSError *error))errorBlock;
 
-
-//set up device target value
+// 有阈值的设备
+// 设置血糖值的阈值范围（最大/最小值）
 - (void)commandSetupTargetValueMin:(float)min
                                max:(float)max
                   receiveDataBlock:(VVResponseDataBlock)receiveDataBlcok

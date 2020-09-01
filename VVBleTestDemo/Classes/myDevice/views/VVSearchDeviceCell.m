@@ -30,7 +30,7 @@
 - (void)setDevice:(VVBleDevice *)device{
     _device = device;
     
-    NSString * text = [NSString stringWithFormat:@"name:%@ sn:%@ mac:%@",device.name,device.sn,device.mac];
+    NSString * text = [NSString stringWithFormat:@"name:%@ sn:%@ mac:%@",device.name,device.sn,device.macAdress];
     self.infofLabel.text = text;
 }
 @end

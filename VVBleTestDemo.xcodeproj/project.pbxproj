@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2305E59A24FE241C00C51AF0 /* VVSearchDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2305E58D24FE241B00C51AF0 /* VVSearchDeviceCell.m */; };
+		2305E59B24FE241C00C51AF0 /* VVSearchDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2305E58F24FE241B00C51AF0 /* VVSearchDeviceCell.xib */; };
+		2305E59C24FE241C00C51AF0 /* VVMyDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2305E59124FE241B00C51AF0 /* VVMyDeviceViewController.m */; };
+		2305E59D24FE241C00C51AF0 /* VVSearchDeviceTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2305E59224FE241B00C51AF0 /* VVSearchDeviceTableViewController.xib */; };
+		2305E59E24FE241C00C51AF0 /* VVSearchDeviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2305E59324FE241B00C51AF0 /* VVSearchDeviceTableViewController.m */; };
+		2305E59F24FE241C00C51AF0 /* VVDeviceOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2305E59424FE241B00C51AF0 /* VVDeviceOperationViewController.m */; };
+		2305E5A024FE241C00C51AF0 /* VVDeviceOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2305E59524FE241B00C51AF0 /* VVDeviceOperationViewController.xib */; };
+		2305E5A124FE241C00C51AF0 /* VVMyDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2305E59624FE241B00C51AF0 /* VVMyDeviceViewController.xib */; };
 		2352D66924BDBA6D00C5AC29 /* VVBleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2352D66824BDBA6D00C5AC29 /* VVBleManager.framework */; };
 		23984F7A24B4280D004662CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984F7924B4280D004662CF /* AppDelegate.m */; };
 		23984F8324B4280D004662CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23984F8124B4280D004662CF /* Main.storyboard */; };
@@ -15,14 +23,7 @@
 		23984F8B24B4280F004662CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984F8A24B4280F004662CF /* main.m */; };
 		23984F9524B4280F004662CF /* VVBleTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984F9424B4280F004662CF /* VVBleTestDemoTests.m */; };
 		23984FA024B4280F004662CF /* VVBleTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984F9F24B4280F004662CF /* VVBleTestDemoUITests.m */; };
-		23984FDD24B42970004662CF /* VVMyDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984FCB24B42970004662CF /* VVMyDeviceViewController.m */; };
-		23984FDE24B42970004662CF /* VVSearchDeviceTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23984FCC24B42970004662CF /* VVSearchDeviceTableViewController.xib */; };
-		23984FDF24B42970004662CF /* VVSearchDeviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984FCD24B42970004662CF /* VVSearchDeviceTableViewController.m */; };
-		23984FE024B42970004662CF /* VVDeviceOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984FCE24B42970004662CF /* VVDeviceOperationViewController.m */; };
-		23984FE124B42970004662CF /* VVDeviceOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23984FCF24B42970004662CF /* VVDeviceOperationViewController.xib */; };
-		23984FE224B42970004662CF /* VVMyDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23984FD024B42970004662CF /* VVMyDeviceViewController.xib */; };
-		23984FE324B42970004662CF /* VVSearchDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23984FD524B42970004662CF /* VVSearchDeviceCell.m */; };
-		23984FE424B42970004662CF /* VVSearchDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23984FD724B42970004662CF /* VVSearchDeviceCell.xib */; };
+		511F524D4765F011FAEE78DB /* Pods_VVBleTestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4233698A361A8443FD5E3 /* Pods_VVBleTestDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045EE4D8E8861B583CF5AB82 /* Pods-VVBleTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVBleTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-VVBleTestDemo/Pods-VVBleTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2305E58D24FE241B00C51AF0 /* VVSearchDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSearchDeviceCell.m; sourceTree = "<group>"; };
+		2305E58E24FE241B00C51AF0 /* VVSearchDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSearchDeviceCell.h; sourceTree = "<group>"; };
+		2305E58F24FE241B00C51AF0 /* VVSearchDeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVSearchDeviceCell.xib; sourceTree = "<group>"; };
+		2305E59124FE241B00C51AF0 /* VVMyDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMyDeviceViewController.m; sourceTree = "<group>"; };
+		2305E59224FE241B00C51AF0 /* VVSearchDeviceTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVSearchDeviceTableViewController.xib; sourceTree = "<group>"; };
+		2305E59324FE241B00C51AF0 /* VVSearchDeviceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSearchDeviceTableViewController.m; sourceTree = "<group>"; };
+		2305E59424FE241B00C51AF0 /* VVDeviceOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDeviceOperationViewController.m; sourceTree = "<group>"; };
+		2305E59524FE241B00C51AF0 /* VVDeviceOperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVDeviceOperationViewController.xib; sourceTree = "<group>"; };
+		2305E59624FE241B00C51AF0 /* VVMyDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVMyDeviceViewController.xib; sourceTree = "<group>"; };
+		2305E59724FE241B00C51AF0 /* VVMyDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMyDeviceViewController.h; sourceTree = "<group>"; };
+		2305E59824FE241B00C51AF0 /* VVDeviceOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDeviceOperationViewController.h; sourceTree = "<group>"; };
+		2305E59924FE241B00C51AF0 /* VVSearchDeviceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSearchDeviceTableViewController.h; sourceTree = "<group>"; };
 		2352D66824BDBA6D00C5AC29 /* VVBleManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVBleManager.framework; sourceTree = SOURCE_ROOT; };
 		23984F7524B4280D004662CF /* VVBleTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVBleTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23984F7824B4280D004662CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,18 +72,8 @@
 		23984F9B24B4280F004662CF /* VVBleTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVBleTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23984F9F24B4280F004662CF /* VVBleTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBleTestDemoUITests.m; sourceTree = "<group>"; };
 		23984FA124B4280F004662CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23984FCB24B42970004662CF /* VVMyDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVMyDeviceViewController.m; sourceTree = "<group>"; };
-		23984FCC24B42970004662CF /* VVSearchDeviceTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVSearchDeviceTableViewController.xib; sourceTree = "<group>"; };
-		23984FCD24B42970004662CF /* VVSearchDeviceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSearchDeviceTableViewController.m; sourceTree = "<group>"; };
-		23984FCE24B42970004662CF /* VVDeviceOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDeviceOperationViewController.m; sourceTree = "<group>"; };
-		23984FCF24B42970004662CF /* VVDeviceOperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVDeviceOperationViewController.xib; sourceTree = "<group>"; };
-		23984FD024B42970004662CF /* VVMyDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVMyDeviceViewController.xib; sourceTree = "<group>"; };
-		23984FD124B42970004662CF /* VVMyDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVMyDeviceViewController.h; sourceTree = "<group>"; };
-		23984FD224B42970004662CF /* VVDeviceOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDeviceOperationViewController.h; sourceTree = "<group>"; };
-		23984FD324B42970004662CF /* VVSearchDeviceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSearchDeviceTableViewController.h; sourceTree = "<group>"; };
-		23984FD524B42970004662CF /* VVSearchDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSearchDeviceCell.m; sourceTree = "<group>"; };
-		23984FD624B42970004662CF /* VVSearchDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSearchDeviceCell.h; sourceTree = "<group>"; };
-		23984FD724B42970004662CF /* VVSearchDeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VVSearchDeviceCell.xib; sourceTree = "<group>"; };
+		7DAB2BA6F13A49055D780255 /* Pods-VVBleTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVBleTestDemo.release.xcconfig"; path = "Target Support Files/Pods-VVBleTestDemo/Pods-VVBleTestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A6D4233698A361A8443FD5E3 /* Pods_VVBleTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVBleTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2352D66924BDBA6D00C5AC29 /* VVBleManager.framework in Frameworks */,
+				511F524D4765F011FAEE78DB /* Pods_VVBleTestDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2305E58B24FE23D100C51AF0 /* myDevice */ = {
+			isa = PBXGroup;
+			children = (
+				2305E59024FE241B00C51AF0 /* controllers */,
+				2305E58C24FE241B00C51AF0 /* views */,
+			);
+			path = myDevice;
+			sourceTree = "<group>";
+		};
+		2305E58C24FE241B00C51AF0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2305E58D24FE241B00C51AF0 /* VVSearchDeviceCell.m */,
+				2305E58E24FE241B00C51AF0 /* VVSearchDeviceCell.h */,
+				2305E58F24FE241B00C51AF0 /* VVSearchDeviceCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2305E59024FE241B00C51AF0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2305E59124FE241B00C51AF0 /* VVMyDeviceViewController.m */,
+				2305E59224FE241B00C51AF0 /* VVSearchDeviceTableViewController.xib */,
+				2305E59324FE241B00C51AF0 /* VVSearchDeviceTableViewController.m */,
+				2305E59424FE241B00C51AF0 /* VVDeviceOperationViewController.m */,
+				2305E59524FE241B00C51AF0 /* VVDeviceOperationViewController.xib */,
+				2305E59624FE241B00C51AF0 /* VVMyDeviceViewController.xib */,
+				2305E59724FE241B00C51AF0 /* VVMyDeviceViewController.h */,
+				2305E59824FE241B00C51AF0 /* VVDeviceOperationViewController.h */,
+				2305E59924FE241B00C51AF0 /* VVSearchDeviceTableViewController.h */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		23984F6C24B4280D004662CF = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +145,8 @@
 				23984F9324B4280F004662CF /* VVBleTestDemoTests */,
 				23984F9E24B4280F004662CF /* VVBleTestDemoUITests */,
 				23984F7624B4280D004662CF /* Products */,
+				60E08984C658DDA9A0897F04 /* Pods */,
+				5A1A6F35CC4A4C1806AA79CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,36 +197,27 @@
 			isa = PBXGroup;
 			children = (
 				2352D66824BDBA6D00C5AC29 /* VVBleManager.framework */,
-				23984FCA24B42970004662CF /* controllers */,
-				23984FD424B42970004662CF /* views */,
+				2305E58B24FE23D100C51AF0 /* myDevice */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		23984FCA24B42970004662CF /* controllers */ = {
+		5A1A6F35CC4A4C1806AA79CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23984FD124B42970004662CF /* VVMyDeviceViewController.h */,
-				23984FCB24B42970004662CF /* VVMyDeviceViewController.m */,
-				23984FD024B42970004662CF /* VVMyDeviceViewController.xib */,
-				23984FD324B42970004662CF /* VVSearchDeviceTableViewController.h */,
-				23984FCD24B42970004662CF /* VVSearchDeviceTableViewController.m */,
-				23984FCC24B42970004662CF /* VVSearchDeviceTableViewController.xib */,
-				23984FD224B42970004662CF /* VVDeviceOperationViewController.h */,
-				23984FCE24B42970004662CF /* VVDeviceOperationViewController.m */,
-				23984FCF24B42970004662CF /* VVDeviceOperationViewController.xib */,
+				A6D4233698A361A8443FD5E3 /* Pods_VVBleTestDemo.framework */,
 			);
-			path = controllers;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23984FD424B42970004662CF /* views */ = {
+		60E08984C658DDA9A0897F04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				23984FD624B42970004662CF /* VVSearchDeviceCell.h */,
-				23984FD524B42970004662CF /* VVSearchDeviceCell.m */,
-				23984FD724B42970004662CF /* VVSearchDeviceCell.xib */,
+				045EE4D8E8861B583CF5AB82 /* Pods-VVBleTestDemo.debug.xcconfig */,
+				7DAB2BA6F13A49055D780255 /* Pods-VVBleTestDemo.release.xcconfig */,
 			);
-			path = views;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23984FA424B4280F004662CF /* Build configuration list for PBXNativeTarget "VVBleTestDemo" */;
 			buildPhases = (
+				F24D7B3E3498C7DD52A72B62 /* [CP] Check Pods Manifest.lock */,
 				23984F7124B4280D004662CF /* Sources */,
 				23984F7224B4280D004662CF /* Frameworks */,
 				23984F7324B4280D004662CF /* Resources */,
+				927FA58E49845695792A63A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,13 +325,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23984FE124B42970004662CF /* VVDeviceOperationViewController.xib in Resources */,
-				23984FE424B42970004662CF /* VVSearchDeviceCell.xib in Resources */,
+				2305E5A024FE241C00C51AF0 /* VVDeviceOperationViewController.xib in Resources */,
 				23984F8824B4280F004662CF /* LaunchScreen.storyboard in Resources */,
+				2305E59B24FE241C00C51AF0 /* VVSearchDeviceCell.xib in Resources */,
 				23984F8524B4280F004662CF /* Assets.xcassets in Resources */,
-				23984FDE24B42970004662CF /* VVSearchDeviceTableViewController.xib in Resources */,
+				2305E59D24FE241C00C51AF0 /* VVSearchDeviceTableViewController.xib in Resources */,
 				23984F8324B4280D004662CF /* Main.storyboard in Resources */,
-				23984FE224B42970004662CF /* VVMyDeviceViewController.xib in Resources */,
+				2305E5A124FE241C00C51AF0 /* VVMyDeviceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +351,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		927FA58E49845695792A63A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VVBleTestDemo/Pods-VVBleTestDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VVBleTestDemo/Pods-VVBleTestDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VVBleTestDemo/Pods-VVBleTestDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24D7B3E3498C7DD52A72B62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VVBleTestDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23984F7124B4280D004662CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -323,10 +400,10 @@
 			files = (
 				23984F7A24B4280D004662CF /* AppDelegate.m in Sources */,
 				23984F8B24B4280F004662CF /* main.m in Sources */,
-				23984FDD24B42970004662CF /* VVMyDeviceViewController.m in Sources */,
-				23984FE324B42970004662CF /* VVSearchDeviceCell.m in Sources */,
-				23984FDF24B42970004662CF /* VVSearchDeviceTableViewController.m in Sources */,
-				23984FE024B42970004662CF /* VVDeviceOperationViewController.m in Sources */,
+				2305E59F24FE241C00C51AF0 /* VVDeviceOperationViewController.m in Sources */,
+				2305E59C24FE241C00C51AF0 /* VVMyDeviceViewController.m in Sources */,
+				2305E59A24FE241C00C51AF0 /* VVSearchDeviceCell.m in Sources */,
+				2305E59E24FE241C00C51AF0 /* VVSearchDeviceTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +570,7 @@
 		};
 		23984FA524B4280F004662CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045EE4D8E8861B583CF5AB82 /* Pods-VVBleTestDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -518,6 +596,7 @@
 		};
 		23984FA624B4280F004662CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DAB2BA6F13A49055D780255 /* Pods-VVBleTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

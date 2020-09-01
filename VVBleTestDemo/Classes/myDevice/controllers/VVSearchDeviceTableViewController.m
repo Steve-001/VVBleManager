@@ -68,30 +68,29 @@
 
 - (void)rightItemAction:(UIBarButtonItem *)sender{
     [self scanDevice];
-    
 }
+
 - (void)scanDevice{
     [self.searchedDevices removeAllObjects];
     [self.tableView reloadData];
     
     __weak typeof(self) weakSelf = self;
-    [self.bleManager scanVivachekDeviceMac:nil sn:nil stop:3 complete:^(VVBleDevice * _Nullable device, NSError * _Nullable error) {
+    [self.bleManager scanAllAvailableVivachekDeviceStop:5 complete:^(VVBleDevice * _Nullable device, NSError * _Nullable error) {
         if(error){
-            VVBleLog(@"------scanDeviceError----- error:%@",error);
-            
+//            NSLog(@"------scanDeviceError----- error:%@",error);
         }
         
         CBManagerState state = CBManagerStatePoweredOn;
         if (error.code == VVBleErrorCode_bleStateUnavailable) {
             
             NSDictionary * errorInfo = error.userInfo;
-            state = errorInfo[@"bleState"];
             
+            state = CBManagerStatePoweredOff;
         }
         [weakSelf updateLabelState:state];
         
         if (device) {
-            VVBleLog(@"-------searchedDevice-------  device:%@",device);
+//            NSLog(@"-------searchedDevice-------  device:%@",device);
             
             [weakSelf updateListDevice:device];
         }
@@ -133,15 +132,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [[VVBleManager shareManager] stopScan];
+    [self.bleManager stopScan];
     VVBleDevice * device = self.searchedDevices[indexPath.row];
     
     __weak typeof(self) weakSelf = self;
     [self.bleManager connectToDevice:device succeed:^(VVBleDevice * _Nonnull device) {
         
         VVBleLog(@"-----connectSucceed----- device:%@",device);
+        //本地化设备信息
+        [VVBleAdvDataManagerTool saveDeviceInfoToUserDefaultWithSn:device.sn macAdress:device.macAdress];
         
         [weakSelf pushTODeviceOperationVCDevice:device];
+        
     } error:^(NSError * _Nullable error) {
         
         VVBleLog(@"-----connectFail----- device:%@ error:%@",device,error);
@@ -155,17 +157,10 @@
 
 - (void)pushTODeviceOperationVCDevice:(VVBleDevice *)device{
     
-//    if (self.bundlingAction) {
-//        self.bundlingAction(device);
-//    }
-//    [self.navigationController popViewControllerAnimated:YES];
-//    return;
-    
-    
-    VVDeviceOperationViewController * deviceOperationVC = [[VVDeviceOperationViewController alloc] init];
-    
-    deviceOperationVC.device = device;
-    [self.navigationController pushViewController:deviceOperationVC animated:YES];
+    if (self.bundlingAction) {
+        self.bundlingAction(device);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

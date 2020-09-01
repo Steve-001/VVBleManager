@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *maxTextFieldView;
 @property (weak, nonatomic) IBOutlet UITextField *numbersHistoryDataTextFieldView;
 
+
+@property (nonatomic , strong) VVBleDevice * device;
+
 @end
 
 @implementation VVDeviceOperationViewController
@@ -26,6 +29,7 @@
     [super viewDidLoad];
     
     [self registNotifi];
+    self.device = [VVBleManager shareManager].currentDevice;
 }
 - (void)registNotifi{
     __weak typeof(self) weakSelf = self;
@@ -66,7 +70,6 @@
 - (IBAction)readAllHistoryData:(UIButton *)sender {
     __weak typeof(self) weakSelf = self;
     
-    
     [[VVBleManager shareManager].currentDevice sendFixedDataCommand:VVCommandType_ReadHistoryData receiveData:^(VVCommandType commandType, NSData * _Nonnull originalData, NSDictionary * _Nonnull polishData) {
         
         NSString * string = [NSString stringWithFormat:@"---ReadTargetValue--- device:%@ \ncommandType:%lu \noriginalData:%@ \npolistData:%@",weakSelf.device,(unsigned long)commandType,originalData,polishData];
@@ -80,8 +83,8 @@
         
         weakSelf.infoTextView.text = [NSString stringWithFormat:@"error:%@",error];
     }];
-    
 }
+
 - (IBAction)readDeviceSoftVersion:(UIButton *)sender {
     __weak typeof(self) weakSelf = self;
     [self.device sendFixedDataCommand:VVCommandType_ReadDeviceInfoTargetVersion receiveData:^(VVCommandType commandType, NSData * _Nonnull originalData, NSDictionary * _Nonnull polishData) {
@@ -99,6 +102,7 @@
         weakSelf.infoTextView.text = [NSString stringWithFormat:@"error:%@",error];
     }];
 }
+
 - (IBAction)deleteAllHistoryData:(UIButton *)sender {
     __weak typeof(self) weakSelf = self;
     [self.device sendFixedDataCommand:VVCommandType_DeleteAllHistoryData receiveData:^(VVCommandType commandType, NSData * _Nonnull originalData, NSDictionary * _Nonnull polishData) {
@@ -115,6 +119,7 @@
         weakSelf.infoTextView.text = [NSString stringWithFormat:@"error:%@",error];
     }];
 }
+
 - (IBAction)deleteSingleHistoryData:(UIButton *)sender {
     __weak typeof(self) weakSelf = self;
     [self.device sendFixedDataCommand:VVCommandType_DeleteSingleHistoryData receiveData:^(VVCommandType commandType, NSData * _Nonnull originalData, NSDictionary * _Nonnull polishData) {
@@ -145,6 +150,7 @@
         weakSelf.infoTextView.text = [NSString stringWithFormat:@"error:%@",error];
     }];
 }
+
 - (IBAction)setupTargetMinMaxValue:(UIButton *)sender {
     
     CGFloat min = [self.minTextFieldView.text floatValue];
@@ -182,6 +188,7 @@
         weakSelf.infoTextView.text = [NSString stringWithFormat:@"error:%@",error];
     }];
 }
+
 - (IBAction)readNumbersHistoryData:(id)sender {
     NSUInteger numbers = [self.numbersHistoryDataTextFieldView.text intValue];
     
@@ -199,7 +206,6 @@
         
         weakSelf.infoTextView.text = [NSString stringWithFormat:@"error:%@",error];
     }];
-
 }
 
 @end
