@@ -2,6 +2,19 @@
 
 ## VVBleManager
 
+已集成 pod，如果 pod search 不到， pod repo update.  再 search
+```
+pod 'VVBleManager'
+```
+
+
+-------------------------------
+2020-07-27  release 1.1.0
+
+2020-07-17  release 1.0.0
+
+
+---------------------------------
 ## 搜索 链接 设备
 ### 搜索  设备
 ```
